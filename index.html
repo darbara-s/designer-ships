@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiments & POCs | Antigravity Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+    <script type="module" src="/src/main.js" defer></script>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="dark-theme">
+    
+    <div class="canvas-container">
+      <canvas id="bg-canvas"></canvas>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header class="magnetic-area">
+      <div class="logo">[ AG_LAB ]</div>
+      <button id="theme-toggle" class="magnetic-btn">
+        <span class="icon-dark">◯</span>
+        <span class="icon-light hidden">◉</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1 class="stagger-text">Explorations<br/><span>in Motion & Code</span></h1>
+          <p class="fade-up-text">A curated collection of Proof of Concepts, micro-interactions, and spatial designs.</p>
+        </div>
+        <div class="scroll-indicator fade-up-text">Scroll to explore <br/> ↓</div>
+      </section>
+
+      <section class="projects">
+        <div class="project-grid">
+          
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <!-- Using the generated image as background -->
+              <div class="project-image bg-experiment-1"></div>
+              <div class="wave-overlay"></div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">001</span>
+              <h2>Glassmorphism UI</h2>
+              <div class="project-hover-reveal">
+                <p>Advanced blur interactions & ambient lighting</p>
+                <a href="#" class="view-link" target="_blank" rel="noopener noreferrer">
+                  View Source <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <div class="project-image bg-experiment-2"></div>
+              <div class="wave-overlay"></div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">002</span>
+              <h2>Spatial Navigation</h2>
+              <div class="project-hover-reveal">
+                <p>WebGL driven 3D spatial routing algorithms</p>
+                <a href="#" class="view-link" target="_blank" rel="noopener noreferrer">
+                  View Source <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image-wrapper">
+              <div class="project-image bg-experiment-3"></div>
+              <div class="wave-overlay"></div>
+            </div>
+            <div class="project-info">
+              <span class="project-number">003</span>
+              <h2>Kinetic Typography</h2>
+              <div class="project-hover-reveal">
+                <p>Variable fonts reacting to auditory frequencies</p>
+                <a href="#" class="view-link" target="_blank" rel="noopener noreferrer">
+                  View Source <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2026 Antigravity. Built with GSAP & Canvas.</p>
+        <a href="#" class="magnetic-btn hover-link">hello@example.com</a>
+      </div>
+    </footer>
+  </body>
+</html>
