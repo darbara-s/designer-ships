@@ -153,8 +153,29 @@ header {
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: var(--text-muted);
   opacity: 0.7;
+  
+  /* Glass shine text animation */
+  background: linear-gradient(
+    120deg,
+    var(--text-muted) 30%,
+    var(--text-main) 50%,
+    var(--text-muted) 70%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -50% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
 /* Projects Section */
