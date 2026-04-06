@@ -1,0 +1,33 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model School {
+  id                   String   @id @default(cuid())
+  name                 String
+  address              String
+  lat                  Float
+  lng                  Float
+  logoUrl              String
+  imgUrl               String   @default("")
+  overallRating        Float    @default(0)
+  totalReviews         Int      @default(0)
+  passRate             Int
+  priceClass           Int      @default(2) // 1, 2, or 3 for € icons
+  baseFee              Float    @default(0)
+  lessonPrice          Float    @default(0)
+  specialDrivePrice    Float    @default(0)
+  languages            String   // Store as semi-colon separated string for SQLite simplicity
+  hasIntensiveCourse   Boolean  @default(false)
+  acceptingStudents    Boolean  @default(true)
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
+}
