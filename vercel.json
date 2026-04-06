@@ -1,0 +1,12 @@
+{
+  "builds": [
+    {
+      "src": "fahrly/package.json",
+      "use": "@vercel/next"
+    },
+    {
+      "src": "sikhsangat/package.json",
+      "use": "@vercel/next"
+    }
+  ]
+}

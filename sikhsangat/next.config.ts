@@ -21,6 +21,7 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  basePath: '/sikhsangat',
 };
 
 export default nextConfig;

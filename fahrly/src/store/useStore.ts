@@ -124,7 +124,7 @@ export const useStore = create<AppState>((set, get) => ({
       if (filters.ratingMin > 0) params.append('minRating', filters.ratingMin.toString());
       if (filters.hasIntensiveCourse) params.append('intensiveOnly', 'true');
 
-      const response = await fetch(`/api/schools?${params.toString()}`);
+      const response = await fetch(`/fahrly/api/schools?${params.toString()}`);
       const data = await response.json();
       set({ schools: data });
     } catch (error) {
