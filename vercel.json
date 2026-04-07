@@ -7,20 +7,12 @@
     {
       "src": "fahrly/package.json",
       "use": "@vercel/next"
-    },
-    {
-      "src": "sikhsangat/package.json",
-      "use": "@vercel/next"
     }
   ],
   "routes": [
     {
       "src": "/fahrly/(.*)",
       "dest": "/fahrly/$1"
-    },
-    {
-      "src": "/sikhsangat/(.*)",
-      "dest": "/sikhsangat/$1"
     },
     {
       "src": "/(.*)",
