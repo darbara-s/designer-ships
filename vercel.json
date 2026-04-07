@@ -2,18 +2,11 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build"
-    },
-    {
-      "src": "fahrly/package.json",
-      "use": "@vercel/next"
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
     }
   ],
   "routes": [
-    {
-      "src": "/fahrly/(.*)",
-      "dest": "/fahrly/$1"
-    },
     {
       "src": "/(.*)",
       "dest": "/$1"
