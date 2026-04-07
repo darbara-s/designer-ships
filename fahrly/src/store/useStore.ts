@@ -126,7 +126,7 @@ export const useStore = create<AppState>((set, get) => ({
 
       const response = await fetch(`/api/schools?${params.toString()}`);
       const data = await response.json();
-      set({ schools: data });
+      set({ schools: Array.isArray(data) ? data : [] });
     } catch (error) {
       console.error('Fetch error:', error);
     } finally {

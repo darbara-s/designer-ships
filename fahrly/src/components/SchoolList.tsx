@@ -18,7 +18,7 @@ export function SchoolList({ schools }: SchoolListProps) {
 
   return (
     <div className="flex flex-col gap-8">
-      {schools.map((school) => (
+      {schools?.map((school) => (
         <SchoolCard key={school.id} school={school} />
       ))}
     </div>

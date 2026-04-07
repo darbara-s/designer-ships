@@ -59,7 +59,7 @@ export default function MapComponent({ schools }: { schools: School[] }) {
         <MapEventHandler />
         <ZoomControl position="bottomright" />
 
-        {schools.map((school) => (
+        {schools?.map((school) => (
           <Marker
             key={school.id}
             position={[school.coordinates.lat, school.coordinates.lng]}
