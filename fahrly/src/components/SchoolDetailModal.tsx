@@ -35,7 +35,10 @@ export function SchoolDetailModal({ school, onClose }: SchoolDetailModalProps) {
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4"
       onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
     >
-      <div className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col relative overflow-hidden isolate">
+      <div 
+        className="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col relative overflow-hidden"
+        style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
+      >
         {/* Scrollable Content */}
         <div className="overflow-y-auto flex-1">
           {/* Hero Image */}
